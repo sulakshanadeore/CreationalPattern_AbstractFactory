@@ -10,6 +10,21 @@ namespace CreationalPattern_AbstractFactory
     {
         static void Main(string[] args)
         {
+
+            
+
+
+            UserLogin login = UserLogin.CreateUser();
+            login.Userid = "Gauri";
+            login.Password = "password";
+            Console.WriteLine("User created successfully");
+
+            UserLogin login2 = UserLogin.CreateUser();
+            login2.Userid = "Sima";
+            login2.Password = "password";
+            Console.WriteLine("User created successfully");
+
+            Console.ReadLine();
         }
     }
 }
